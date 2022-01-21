@@ -12,12 +12,16 @@ export default function PostPage({
   return (
     <>
       <Link href="/">
-        <a className="btn btn-back">Go Back</a>
+        <a className="text-gray-800 hover:text-gray-600 font-semibold mb-3">
+          Go Back
+        </a>
       </Link>
-      <div className="post">
-        <h1 className="post-title">{title}</h1>
-        <div className="post-date">Posted on {date}</div>
-        <div className="post-body">
+      <div className="mt-3">
+        <div className="mb-6">
+          <h2 className="font-semibold text-2xl lg:text-3xl">{title}</h2>
+          <p className="font-semibold">Posted on {date}</p>
+        </div>
+        <div className="post">
           <div
             dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
           ></div>

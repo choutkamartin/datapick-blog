@@ -20,7 +20,39 @@ a {
 }
 
 @layer components {
-  .post > h1 {
-    @apply text-2xl;
+  .post h1 {
+    @apply font-bold text-4xl lg:text-5xl mb-3;
+  }
+
+  .post h2 {
+    @apply font-semibold text-2xl lg:text-3xl mb-2;
+  }
+
+  .post h3 {
+    @apply font-semibold text-xl lg:text-2xl mb-2;
+  }
+
+  .post h4 {
+    @apply font-bold text-lg mb-2;
+  }
+
+  .post h5 {
+    @apply font-bold mb-2;
+  }
+
+  .post h6 {
+    @apply font-semibold mb-2;
+  }
+
+  .post p {
+    @apply mb-3
+  }
+
+  .post ul {
+    @apply list-disc list-inside mb-3;
+  }
+
+  .post a {
+    @apply underline text-gray-600 hover:text-black
   }
 }

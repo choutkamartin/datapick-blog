@@ -3,16 +3,7 @@ import Image from "next/image";
 
 export default function Post({ post }) {
   return (
-    <div className="rounded-lg shadow-md bg-white overflow-hidden">
-      <div className="w-full h-40 relative bg-gray-700 border-b">
-        <Image
-          src={post.frontmatter.cover_image}
-          alt="Post image"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-50"
-        />
-      </div>
+    <div className="rounded shadow-md bg-white overflow-hidden">
       <div className="p-8 bg-state-50">
         <div className="mb-4">
           <h3 className="text-lg font-bold text-gray-800 mb-1">
