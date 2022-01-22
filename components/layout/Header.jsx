@@ -6,10 +6,11 @@ export default function Header() {
     <header className="relative bg-white">
       <div className="relative w-full h-48 lg:h-72 bg-black">
         <Image
-          src="/images/posts/shubham-dhage-gC_aoAjQl2Q-unsplash.jpg"
+          src="/images/posts/alex-knight-2EJCSULRwC8-unsplash.jpg"
           alt="Header image"
           layout="fill"
           objectFit="cover"
+          objectPosition="center"
           className="opacity-50"
         />
       </div>
